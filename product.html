@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Продвинутый курс JavaScript</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/BaseView.js"></script>
+    <script src="js/BaseCollection.js"></script>
+    <script src="js/MenuItem.js"></script>
+    <script src="js/Menu.js"></script>
+    <script src="js/Submenu.js"></script>
+    <script src="js/SingleProduct.js"></script>
+  </head>
+  <body>
+    <article class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded mt-3"><a class="navbar-brand" href="index.html">Магазин</a>
+        <div class="collapse navbar-collapse" id="shop-menu"></div>
+        <form class="form-inline my-2 my-md-0">
+          <input class="form-control" placeholder="Поиск" aria-label="Search" type="text">
+        </form>
+      </nav>
+      <div id="app">
+        <hr class="m-2">
+        <article class="page single-product row" id="product">
+          <div class="col-md-3" id="product-image"><a href="#" target="_blank"><img class="img-fluid" src="" alt="Изображение" width="235"></a></div>
+          <div class="product__info col-md-9">
+            <h1 id="product-title">page.title</h1>
+            <p id="product-price">page.price</p>
+            <input class="product-cart" type="button" value="Купить">
+            <section>
+              <h2>Описание товара</h2>
+              <p id="product-excerpt">page.excerpt</p>
+            </section>
+          </div>
+          <section class="col-md-12" id="description">
+            <h2>Подробное описание товара</h2>
+            <p class="page-content" id="product-content"></p>
+          </section>
+        </article>
+      </div>
+    </article>
+    <script src="js/utils.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

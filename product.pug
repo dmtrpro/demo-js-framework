@@ -1,0 +1,52 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset='utf-8')
+        title Продвинутый курс JavaScript
+        //- link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css' rel='stylesheet')
+        link(href='css/style.css' rel='stylesheet')
+        script(src="js/BaseView.js")
+        script(src="js/BaseCollection.js")
+        script(src="js/MenuItem.js")
+        script(src="js/Menu.js")
+        script(src="js/Submenu.js")
+        script(src="js/SingleProduct.js")
+
+    body
+        article.container
+            nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.rounded.mt-3
+                a(href="index.html").navbar-brand Магазин
+                .collapse.navbar-collapse#shop-menu
+                form.form-inline.my-2.my-md-0
+                    input.form-control(placeholder="Поиск" aria-label="Search" type="text")
+
+            div#app
+                hr.m-2
+                article.page.single-product.row#product
+                    #product-image.col-md-3
+                        a(href='#' target="_blank")
+                            img(src='' alt='Изображение' width='235').img-fluid
+                    .product__info.col-md-9
+                        h1#product-title page.title
+                        p#product-price page.price
+                        input(type='button' value='Купить').product-cart
+                        section
+                            h2 Описание товара
+                            p#product-excerpt page.excerpt
+                            //- a(href='#description') читать далее
+                        //- section.product-chars
+                            h2 Характеристики товара
+                            //- table
+                                each val, key in page.chars
+                                    tr
+                                        td= key
+                                        | :
+                                        td= val
+
+                    section#description.col-md-12
+                        h2 Подробное описание товара
+                        p#product-content.page-content
+
+        script(src="js/utils.js")
+        script(src='js/app.js')

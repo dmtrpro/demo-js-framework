@@ -1,0 +1,19 @@
+.dropdown-menu{
+    top: 80%;
+    left: inherit;
+}
+
+.dropdown-toggle:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-link a {
+    color: #888;
+}
+
+.product,
+.product:hover {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}

@@ -1,0 +1,32 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset='utf-8')
+        title Продвинутый курс JavaScript
+        //- link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css' rel='stylesheet')
+        link(href='css/style.css' rel='stylesheet')
+        script(src="js/BaseView.js")
+        script(src="js/BaseCollection.js")
+        script(src="js/MenuItem.js")
+        script(src="js/Menu.js")
+        script(src="js/Submenu.js")
+        script(src="js/Product.js")
+        script(src="js/ProductList.js")
+
+    body
+        article.container
+            nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.rounded.mt-3
+                a(href="index.html").navbar-brand Магазин
+                .collapse.navbar-collapse#shop-menu
+                form.form-inline.my-2.my-md-0
+                    input.form-control(placeholder="Поиск" aria-label="Search" type="text")
+
+            div#app
+                #products.m-3
+                //button#btn2.btn.btn-default Продукты
+
+                hr.m-5
+
+        script(src="js/utils.js")
+        script(src='js/app.js')

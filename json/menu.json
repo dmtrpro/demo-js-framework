@@ -1,0 +1,20 @@
+[
+  {"href": "/index.html", "title": "Главная"},
+  {"href": "/shop/", "title": "Каталог"},
+  {"href": "/service", "title": "Услуги"},
+  {
+    "href": "/categories",
+    "title": "Категории",
+    "class": "dropdown-toggle",
+    "menu": {
+      "class": "dropdown-menu",
+      "items": [
+        {"href": "/prog", "title": "Разработка ПО"},
+        {"href": "/admin", "title": "Системное администрирование"},
+        {"href": "/git", "title": "Шаблоны проектирование"},
+        {"href": "/managment", "title": "Управление проектами"}
+      ]
+    }
+  },
+  {"href": "/contacts", "title": "Контакты"}
+]
