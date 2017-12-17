@@ -1,20 +1,19 @@
 [
-  {"href": "/index.html", "title": "Главная"},
-  {"href": "/shop/", "title": "Каталог"},
-  {"href": "/service", "title": "Услуги"},
+  {"href": "index.html", "title": "Главная"},
+  {"href": "index.html", "title": "Каталог"},
   {
-    "href": "/categories",
+    "href": "index.html",
     "title": "Категории",
     "class": "dropdown-toggle",
     "menu": {
       "class": "dropdown-menu",
       "items": [
-        {"href": "/prog", "title": "Разработка ПО"},
-        {"href": "/admin", "title": "Системное администрирование"},
-        {"href": "/git", "title": "Шаблоны проектирование"},
-        {"href": "/managment", "title": "Управление проектами"}
+        {"href": "product.html?product=php", "title": "Разработка ПО"},
+        {"href": "product.html?product=clearcode", "title": "Системное администрирование"},
+        {"href": "product.html?product=git", "title": "Шаблоны проектирования"},
+        {"href": "product.html?product=devops", "title": "Управление проектами"}
       ]
     }
   },
-  {"href": "/contacts", "title": "Контакты"}
+  {"href": "index.html", "title": "Контакты"}
 ]
