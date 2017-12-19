@@ -1,0 +1,19 @@
+extends _base.pug
+
+block styles
+    script(src="js/base/BaseBuilder.js")
+    script(src="js/form/FormView.js")
+    script(src="js/form/FormBuilder.js")
+    script(src="js/form/FormElements.js")
+
+block content
+    div#app
+        #form.m-3
+
+        hr.m-5
+
+    h2 Результат замены кавычек:
+    div#text
+
+block code
+    script(src="js/pages/contact.js")
