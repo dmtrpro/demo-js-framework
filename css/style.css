@@ -16,4 +16,17 @@
     color: inherit;
     text-decoration: none;
     display: block;
+    margin: 7px 0 20px;
+}
+
+.form-control + .form-helper{
+    display: none;
+}
+
+.form-control.invalid + .form-helper{
+    display: block;
+}
+
+.form-control.invalid {
+    border-color: red;
 }
