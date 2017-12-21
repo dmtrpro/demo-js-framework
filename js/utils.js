@@ -37,3 +37,7 @@ function $get(parameterName) {
 function $s(selector) {
     return document.querySelector(selector);
 }
+
+function $uniqueId(prefix) {
+    return prefix + '-' + (Date.now() - Math.floor(Math.random()*10000000000)*100);
+}

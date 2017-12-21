@@ -5,7 +5,8 @@ var form = new FormBuilder({
     method: "GET"
 });
 
-form.add(new NameInput({
+form
+    .add(new NameInput({
         label: 'Ваше имя:',
         placeholder: 'Иван'
     }))

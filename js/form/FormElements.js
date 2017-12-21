@@ -60,6 +60,10 @@ function TextAreaInput(attrs) {
     FormView.call(this, attrs);
 
     this.input = document.createElement('textarea');
+
+    if (!this.get('id')) {
+        this.set('id', $uniqueId('textarea'));
+    }
 }
 
 TextAreaInput.prototype.renderAttributes = function () {

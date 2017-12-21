@@ -11,7 +11,9 @@
     <script src="js/menu/MenuItem.js"></script>
     <script src="js/menu/Menu.js"></script>
     <script src="js/menu/Submenu.js"></script>
-    <script src="js/product/SingleProduct.js"></script>
+    <script src="js/base/BaseBuilder.js"></script>
+    <script src="js/tabs/TabBuilder.js"></script>
+    <script src="js/tabs/TabView.js"></script>
   </head>
   <body>
     <section class="container">
@@ -22,25 +24,11 @@
         </form>
       </nav>
       <div id="app">
-        <hr class="m-2">
-        <article class="page single-product row" id="product">
-          <div class="col-md-4" id="product-image"><a href="#" target="_blank"><img class="img-fluid" src="" alt="Изображение" width="350"></a></div>
-          <div class="product__info col-md-8">
-            <h1 id="product-title"></h1>
-            <p id="product-price"></p>
-            <input class="product-cart" type="button" value="Купить">
-            <section>
-              <h2>Описание товара</h2>
-              <p id="product-excerpt"></p>
-            </section>
-          </div>
-          <section class="col-md-12 mt-4" id="description">
-            <h2>Подробное описание товара</h2>
-            <p class="page-content" id="product-content"></p>
-          </section>
-        </article>
+        <div class="m-3" id="tabs"></div>
+        <hr class="m-5">
       </div>
     </section>
     <script src="js/app.js"></script>
+    <script src="js/pages/tabs.js"></script>
   </body>
 </html>

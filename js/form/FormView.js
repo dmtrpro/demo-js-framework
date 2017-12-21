@@ -2,7 +2,7 @@ function FormView(attrs) {
     BaseView.call(this, attrs);
 
     if (!this.get('id')) {
-        this.set('id', 'form-element-' + Date.now());
+        this.set('id', $uniqueId('form-element'));
     }
 
     this.el = document.createElement('div');
@@ -55,13 +55,13 @@ FormView.prototype.isValid = function () {
 FormView.prototype.render = function () {
     this.renderAttributes();
 
-    if(this.get('label')){
+    if (this.get('label')) {
         this.el.appendChild(this.label);
     }
 
     this.el.appendChild(this.input);
 
-    if(this.get('helper')){
+    if (this.get('helper')) {
         this.helper.innerText = this.get('helper');
         this.el.appendChild(this.helper);
     }

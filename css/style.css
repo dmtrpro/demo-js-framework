@@ -30,3 +30,11 @@
 .form-control.invalid {
     border-color: red;
 }
+
+.page-tab{
+    display: none;
+}
+
+.tab-active {
+    display: block !important;
+}

@@ -4,6 +4,14 @@ function BaseView(attrs) {
     this.attributes = attrs ? attrs : [];
 }
 
+BaseView.prototype.$el = function () {
+    if (typeof(jQuery) !== 'undefined') {
+        return jQuery(this.el);
+    }
+
+    return this.el;
+};
+
 BaseView.prototype.attach = function (selector) {
     document.querySelector(selector).appendChild(this.el);
     this.render();

@@ -1,9 +1,8 @@
 [
-  {"href": "index.html", "title": "Главная"},
   {"href": "index.html", "title": "Каталог"},
   {
-    "href": "index.html",
     "title": "Категории",
+    "href": "index.html",
     "class": "dropdown-toggle",
     "menu": {
       "class": "dropdown-menu",

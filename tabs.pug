@@ -1,0 +1,15 @@
+extends _base.pug
+
+block styles
+    script(src="js/base/BaseBuilder.js")
+    script(src="js/tabs/TabBuilder.js")
+    script(src="js/tabs/TabView.js")
+
+block content
+    div#app
+        #tabs.m-3
+
+        hr.m-5
+
+block code
+    script(src="js/pages/tabs.js")
