@@ -1,0 +1,30 @@
+{
+  "name": "frontend-framework",
+  "version": "1.0.0",
+  "description": "GeekBrains Course JS FrameWork",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^3.2.1",
+    "jquery-ui": "^1.12.1",
+    "popper.js": "^1.12.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmtrpro/gb-jsfw.git"
+  },
+  "keywords": [
+    "js",
+    "framework"
+  ],
+  "author": "Dmitry Prosyanik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmtrpro/gb-jsfw/issues"
+  },
+  "homepage": "https://github.com/dmtrpro/gb-jsfw#readme"
+}
